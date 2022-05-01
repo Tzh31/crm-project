@@ -1,0 +1,12 @@
+package com.bjpowernode.crm.workbench.service;
+
+import com.bjpowernode.crm.workbench.domain.ClueRemark;
+
+import java.util.List;
+
+public interface ClueRemarkService {
+    List< ClueRemark> queryClueRemarkForDetailByClueId(String id);
+    int editClueRemark(ClueRemark clueRemark);
+   int saveClueRemark(ClueRemark clueRemark);
+   int deleteClueRemarkByRemarkId(String clueRemarkId);
+}
