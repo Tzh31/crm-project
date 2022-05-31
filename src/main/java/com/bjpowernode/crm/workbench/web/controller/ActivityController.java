@@ -36,7 +36,7 @@ import static com.bjpowernode.crm.commons.contans.Contans.RETURN_OBJECT_CODE_FAI
 import static com.bjpowernode.crm.commons.contans.Contans.RETURN_OBJECT_CODE_SUCCESS;
 
 @Controller
-public class ActivityController {
+public class  ActivityController {
 
     @Autowired
     UserService userService;
@@ -192,7 +192,7 @@ public class ActivityController {
         response.addHeader("Content-Disposition", "attachment;filename=myDtudentList.xls");
         byte[] b = new byte[255];
         int length = -1;
-        while ((length = fileInputStream.read(b)) > -1) {
+        while ((  length = fileInputStream.read(b)) > -1) {
             outputStream.write(b, 0, length);
         }
         fileInputStream.close();

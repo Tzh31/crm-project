@@ -33,7 +33,8 @@ public class UserController {
         boolean f2 = false;
         for (Cookie cookie : request.getCookies()) {
             System.out.println(cookie.getName());
-            if ("loginAct".equals(cookie.getName())) {;
+            if ("loginAct".equals(cookie.getName())) {
+                ;
                 f = true;
                 map.put("loginAct", cookie.getValue());
                 System.out.println("账号有");
@@ -74,7 +75,7 @@ public class UserController {
 //        System.out.println(loginPwd.length()+"hahahhaha");
 //        if (!f) {
 
-            loginPwd = MD5Util.getMD5(loginPwd);
+        loginPwd = MD5Util.getMD5(loginPwd);
 
 //        }
         map.put("loginAct", loginAct);

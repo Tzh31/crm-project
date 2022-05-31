@@ -29,7 +29,7 @@ public class WorkbenchIndexController {
     public String index(HttpServletRequest request, HttpSession session) {
        User user= (User) session.getAttribute(Contans.SESSION_USER);
        request.setAttribute(Contans.SESSION_USER,user);
-        System.out.println(user+"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+//        System.out.println(user+"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
         return "workbench/index";
 
     }
